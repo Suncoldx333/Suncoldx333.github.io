@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6002867A1C8B249B00D16C08 /* Score.plist in Resources */ = {isa = PBXBuildFile; fileRef = 600286791C8B249B00D16C08 /* Score.plist */; };
+		6002DD3C1C2EAA2A0086776B /* chess.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6002DD3B1C2EAA2A0086776B /* chess.plist */; };
+		6003B3461C5A581900C3DDB8 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003B3451C5A581900C3DDB8 /* GameKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		60050F081C74AD9A005376FA /* ArcherMoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60050F071C74AD9A005376FA /* ArcherMoveMode.m */; };
+		600557BB1C45320A004FC9B1 /* JLAnimatedImagesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 600557BA1C45320A004FC9B1 /* JLAnimatedImagesView.m */; };
+		6008D1D11C58F12400E08ED6 /* GameCenterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6008D1D01C58F12400E08ED6 /* GameCenterHelper.m */; };
+		600CE22D1C535BD40017CBCD /* BlackChess.plist in Resources */ = {isa = PBXBuildFile; fileRef = 600CE22C1C535BD40017CBCD /* BlackChess.plist */; };
+		601450481C1D2467005228AB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 601450471C1D2467005228AB /* SecondViewController.m */; };
+		6015659E1C1BB31D00E7F3F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6015659D1C1BB31D00E7F3F6 /* main.m */; };
+		601565A11C1BB31D00E7F3F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 601565A01C1BB31D00E7F3F6 /* AppDelegate.m */; };
+		601565A41C1BB31D00E7F3F6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 601565A31C1BB31D00E7F3F6 /* ViewController.m */; };
+		601565A71C1BB31E00E7F3F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601565A51C1BB31E00E7F3F6 /* Main.storyboard */; };
+		601565A91C1BB31E00E7F3F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601565A81C1BB31E00E7F3F6 /* Assets.xcassets */; };
+		601565AC1C1BB31E00E7F3F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601565AA1C1BB31E00E7F3F6 /* LaunchScreen.storyboard */; };
+		601565B71C1BB31F00E7F3F6 /* chess3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 601565B61C1BB31F00E7F3F6 /* chess3Tests.m */; };
+		601565C21C1BB31F00E7F3F6 /* chess3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 601565C11C1BB31F00E7F3F6 /* chess3UITests.m */; };
+		604D06071C8149F50071D39C /* Turn.plist in Resources */ = {isa = PBXBuildFile; fileRef = 604D06061C8149F50071D39C /* Turn.plist */; };
+		6061695F1C78A63500CF46A7 /* LancerMoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6061695E1C78A63500CF46A7 /* LancerMoveMode.m */; };
+		607319C91C82DA15005D2595 /* SaberMoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 607319C81C82DA15005D2595 /* SaberMoveMode.m */; };
+		607319CB1C832E50005D2595 /* Libian.ttc in Sources */ = {isa = PBXBuildFile; fileRef = 607319CA1C832D44005D2595 /* Libian.ttc */; };
+		607496FF1C33FEEE00ECA01A /* AttackHealth.plist in Resources */ = {isa = PBXBuildFile; fileRef = 607496FE1C33FEEE00ECA01A /* AttackHealth.plist */; };
+		607846621C3D6388004971CD /* ChessPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 607846611C3D6388004971CD /* ChessPlayViewController.m */; };
+		607846681C3D64DD004971CD /* MoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 607846671C3D64DD004971CD /* MoveMode.m */; };
+		607FFF421C283E4D008C7DDF /* chooseAttackAndHealth.m in Sources */ = {isa = PBXBuildFile; fileRef = 607FFF411C283E4D008C7DDF /* chooseAttackAndHealth.m */; };
+		609B54171C40CE3A0055AEA3 /* BerserkerMoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B54161C40CE3A0055AEA3 /* BerserkerMoveMode.m */; };
+		609B541A1C40CEDE0055AEA3 /* RiderMoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B54191C40CEDE0055AEA3 /* RiderMoveMode.m */; };
+		609B541D1C40D0310055AEA3 /* CasterMoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B541C1C40D0310055AEA3 /* CasterMoveMode.m */; };
+		609B54201C40DB8C0055AEA3 /* AssassinMoveMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B541F1C40DB8C0055AEA3 /* AssassinMoveMode.m */; };
+		609B54251C40DC900055AEA3 /* GameboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B54241C40DC900055AEA3 /* GameboardView.m */; };
+		609B54281C40DCD70055AEA3 /* ChessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B54271C40DCD70055AEA3 /* ChessView.m */; };
+		609B542B1C40DEAE0055AEA3 /* StepView.m in Sources */ = {isa = PBXBuildFile; fileRef = 609B542A1C40DEAE0055AEA3 /* StepView.m */; };
+		60A609BB1C4BB9D9004BE5CB /* ChessCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A609BA1C4BB9D9004BE5CB /* ChessCollectionView.m */; };
+		60A609BE1C4BBA04004BE5CB /* ChessCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A609BD1C4BBA04004BE5CB /* ChessCollectionViewCell.m */; };
+		60DD2B981C4E603B0044DF06 /* ChessCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DD2B971C4E603B0044DF06 /* ChessCollectionViewLayout.m */; };
+		60F1DAD11C47C1B3009E4A97 /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1DAD01C47C1B3009E4A97 /* DrawerViewController.m */; };
+		60F1DAD41C47C5C0009E4A97 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1DAD31C47C5C0009E4A97 /* MenuViewController.m */; };
+		60F1DADA1C47ED45009E4A97 /* ICSDropShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1DAD91C47ED45009E4A97 /* ICSDropShadowView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		601565B31C1BB31F00E7F3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601565911C1BB31D00E7F3F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601565981C1BB31D00E7F3F6;
+			remoteInfo = chess3;
+		};
+		601565BE1C1BB31F00E7F3F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 601565911C1BB31D00E7F3F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601565981C1BB31D00E7F3F6;
+			remoteInfo = chess3;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		600286791C8B249B00D16C08 /* Score.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Score.plist; sourceTree = "<group>"; };
+		6002DD3B1C2EAA2A0086776B /* chess.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = chess.plist; sourceTree = "<group>"; };
+		6003B3451C5A581900C3DDB8 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		60050F061C74AD9A005376FA /* ArcherMoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcherMoveMode.h; sourceTree = "<group>"; };
+		60050F071C74AD9A005376FA /* ArcherMoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcherMoveMode.m; sourceTree = "<group>"; };
+		600557B91C45320A004FC9B1 /* JLAnimatedImagesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLAnimatedImagesView.h; sourceTree = "<group>"; };
+		600557BA1C45320A004FC9B1 /* JLAnimatedImagesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLAnimatedImagesView.m; sourceTree = "<group>"; };
+		6008D1CF1C58F12300E08ED6 /* GameCenterHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterHelper.h; sourceTree = "<group>"; };
+		6008D1D01C58F12400E08ED6 /* GameCenterHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterHelper.m; sourceTree = "<group>"; };
+		600CE22C1C535BD40017CBCD /* BlackChess.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BlackChess.plist; sourceTree = "<group>"; };
+		601450461C1D2467005228AB /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		601450471C1D2467005228AB /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		601565991C1BB31D00E7F3F6 /* chess3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chess3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6015659D1C1BB31D00E7F3F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6015659F1C1BB31D00E7F3F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		601565A01C1BB31D00E7F3F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		601565A21C1BB31D00E7F3F6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		601565A31C1BB31D00E7F3F6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		601565A61C1BB31E00E7F3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		601565A81C1BB31E00E7F3F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		601565AB1C1BB31E00E7F3F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		601565AD1C1BB31E00E7F3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601565B21C1BB31F00E7F3F6 /* chess3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chess3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		601565B61C1BB31F00E7F3F6 /* chess3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chess3Tests.m; sourceTree = "<group>"; };
+		601565B81C1BB31F00E7F3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601565BD1C1BB31F00E7F3F6 /* chess3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chess3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		601565C11C1BB31F00E7F3F6 /* chess3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chess3UITests.m; sourceTree = "<group>"; };
+		601565C31C1BB31F00E7F3F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604D06061C8149F50071D39C /* Turn.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Turn.plist; sourceTree = "<group>"; };
+		6061695D1C78A63500CF46A7 /* LancerMoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LancerMoveMode.h; sourceTree = "<group>"; };
+		6061695E1C78A63500CF46A7 /* LancerMoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LancerMoveMode.m; sourceTree = "<group>"; };
+		607319C71C82DA15005D2595 /* SaberMoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaberMoveMode.h; sourceTree = "<group>"; };
+		607319C81C82DA15005D2595 /* SaberMoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaberMoveMode.m; sourceTree = "<group>"; };
+		607319CA1C832D44005D2595 /* Libian.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Libian.ttc; path = ../../../../../../../../Library/Fonts/Libian.ttc; sourceTree = "<group>"; };
+		607496FE1C33FEEE00ECA01A /* AttackHealth.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AttackHealth.plist; sourceTree = "<group>"; };
+		607846601C3D6388004971CD /* ChessPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessPlayViewController.h; sourceTree = "<group>"; };
+		607846611C3D6388004971CD /* ChessPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessPlayViewController.m; sourceTree = "<group>"; };
+		607846661C3D64DD004971CD /* MoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveMode.h; sourceTree = "<group>"; };
+		607846671C3D64DD004971CD /* MoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveMode.m; sourceTree = "<group>"; };
+		607FFF401C283E4D008C7DDF /* chooseAttackAndHealth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chooseAttackAndHealth.h; sourceTree = "<group>"; };
+		607FFF411C283E4D008C7DDF /* chooseAttackAndHealth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chooseAttackAndHealth.m; sourceTree = "<group>"; };
+		609B54151C40CE3A0055AEA3 /* BerserkerMoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BerserkerMoveMode.h; sourceTree = "<group>"; };
+		609B54161C40CE3A0055AEA3 /* BerserkerMoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BerserkerMoveMode.m; sourceTree = "<group>"; };
+		609B54181C40CEDE0055AEA3 /* RiderMoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiderMoveMode.h; sourceTree = "<group>"; };
+		609B54191C40CEDE0055AEA3 /* RiderMoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiderMoveMode.m; sourceTree = "<group>"; };
+		609B541B1C40D0310055AEA3 /* CasterMoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasterMoveMode.h; sourceTree = "<group>"; };
+		609B541C1C40D0310055AEA3 /* CasterMoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasterMoveMode.m; sourceTree = "<group>"; };
+		609B541E1C40DB8C0055AEA3 /* AssassinMoveMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssassinMoveMode.h; sourceTree = "<group>"; };
+		609B541F1C40DB8C0055AEA3 /* AssassinMoveMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssassinMoveMode.m; sourceTree = "<group>"; };
+		609B54231C40DC900055AEA3 /* GameboardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameboardView.h; sourceTree = "<group>"; };
+		609B54241C40DC900055AEA3 /* GameboardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameboardView.m; sourceTree = "<group>"; };
+		609B54261C40DCD70055AEA3 /* ChessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessView.h; sourceTree = "<group>"; };
+		609B54271C40DCD70055AEA3 /* ChessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessView.m; sourceTree = "<group>"; };
+		609B54291C40DEAE0055AEA3 /* StepView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepView.h; sourceTree = "<group>"; };
+		609B542A1C40DEAE0055AEA3 /* StepView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepView.m; sourceTree = "<group>"; };
+		60A609B91C4BB9D9004BE5CB /* ChessCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessCollectionView.h; sourceTree = "<group>"; };
+		60A609BA1C4BB9D9004BE5CB /* ChessCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessCollectionView.m; sourceTree = "<group>"; };
+		60A609BC1C4BBA04004BE5CB /* ChessCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessCollectionViewCell.h; sourceTree = "<group>"; };
+		60A609BD1C4BBA04004BE5CB /* ChessCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessCollectionViewCell.m; sourceTree = "<group>"; };
+		60DD2B961C4E603B0044DF06 /* ChessCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChessCollectionViewLayout.h; sourceTree = "<group>"; };
+		60DD2B971C4E603B0044DF06 /* ChessCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChessCollectionViewLayout.m; sourceTree = "<group>"; };
+		60F1DACF1C47C1B3009E4A97 /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		60F1DAD01C47C1B3009E4A97 /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		60F1DAD21C47C5C0009E4A97 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		60F1DAD31C47C5C0009E4A97 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		60F1DAD81C47ED45009E4A97 /* ICSDropShadowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICSDropShadowView.h; sourceTree = "<group>"; };
+		60F1DAD91C47ED45009E4A97 /* ICSDropShadowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICSDropShadowView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601565961C1BB31D00E7F3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6003B3461C5A581900C3DDB8 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601565AF1C1BB31F00E7F3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601565BA1C1BB31F00E7F3F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6008D1CE1C58F0D500E08ED6 /* GameCenter */ = {
+			isa = PBXGroup;
+			children = (
+				6008D1CF1C58F12300E08ED6 /* GameCenterHelper.h */,
+				6008D1D01C58F12400E08ED6 /* GameCenterHelper.m */,
+			);
+			name = GameCenter;
+			sourceTree = "<group>";
+		};
+		601450451C1D224F005228AB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				601565A21C1BB31D00E7F3F6 /* ViewController.h */,
+				601565A31C1BB31D00E7F3F6 /* ViewController.m */,
+				601450461C1D2467005228AB /* SecondViewController.h */,
+				601450471C1D2467005228AB /* SecondViewController.m */,
+				607846601C3D6388004971CD /* ChessPlayViewController.h */,
+				607846611C3D6388004971CD /* ChessPlayViewController.m */,
+				60F1DAD21C47C5C0009E4A97 /* MenuViewController.h */,
+				60F1DAD31C47C5C0009E4A97 /* MenuViewController.m */,
+				60F1DACF1C47C1B3009E4A97 /* DrawerViewController.h */,
+				60F1DAD01C47C1B3009E4A97 /* DrawerViewController.m */,
+				60F1DAD81C47ED45009E4A97 /* ICSDropShadowView.h */,
+				60F1DAD91C47ED45009E4A97 /* ICSDropShadowView.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		601565901C1BB31D00E7F3F6 = {
+			isa = PBXGroup;
+			children = (
+				6003B3451C5A581900C3DDB8 /* GameKit.framework */,
+				6015659B1C1BB31D00E7F3F6 /* chess3 */,
+				601565B51C1BB31F00E7F3F6 /* chess3Tests */,
+				601565C01C1BB31F00E7F3F6 /* chess3UITests */,
+				6015659A1C1BB31D00E7F3F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6015659A1C1BB31D00E7F3F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				601565991C1BB31D00E7F3F6 /* chess3.app */,
+				601565B21C1BB31F00E7F3F6 /* chess3Tests.xctest */,
+				601565BD1C1BB31F00E7F3F6 /* chess3UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6015659B1C1BB31D00E7F3F6 /* chess3 */ = {
+			isa = PBXGroup;
+			children = (
+				6015659F1C1BB31D00E7F3F6 /* AppDelegate.h */,
+				601565A01C1BB31D00E7F3F6 /* AppDelegate.m */,
+				600557B91C45320A004FC9B1 /* JLAnimatedImagesView.h */,
+				600557BA1C45320A004FC9B1 /* JLAnimatedImagesView.m */,
+				6008D1CE1C58F0D500E08ED6 /* GameCenter */,
+				601450451C1D224F005228AB /* ViewController */,
+				607FFF3F1C283E22008C7DDF /* PickerView */,
+				60957BF91C2FF54A003B8E6E /* ChessCollectionView */,
+				6002DD3B1C2EAA2A0086776B /* chess.plist */,
+				607496FE1C33FEEE00ECA01A /* AttackHealth.plist */,
+				600CE22C1C535BD40017CBCD /* BlackChess.plist */,
+				604D06061C8149F50071D39C /* Turn.plist */,
+				600286791C8B249B00D16C08 /* Score.plist */,
+				609B54221C40DC520055AEA3 /* ChessView */,
+				607846651C3D649C004971CD /* ChessMoveMode */,
+				601565A51C1BB31E00E7F3F6 /* Main.storyboard */,
+				601565A81C1BB31E00E7F3F6 /* Assets.xcassets */,
+				601565AA1C1BB31E00E7F3F6 /* LaunchScreen.storyboard */,
+				601565AD1C1BB31E00E7F3F6 /* Info.plist */,
+				607319CA1C832D44005D2595 /* Libian.ttc */,
+				6015659C1C1BB31D00E7F3F6 /* Supporting Files */,
+			);
+			path = chess3;
+			sourceTree = "<group>";
+		};
+		6015659C1C1BB31D00E7F3F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6015659D1C1BB31D00E7F3F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		601565B51C1BB31F00E7F3F6 /* chess3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				601565B61C1BB31F00E7F3F6 /* chess3Tests.m */,
+				601565B81C1BB31F00E7F3F6 /* Info.plist */,
+			);
+			path = chess3Tests;
+			sourceTree = "<group>";
+		};
+		601565C01C1BB31F00E7F3F6 /* chess3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				601565C11C1BB31F00E7F3F6 /* chess3UITests.m */,
+				601565C31C1BB31F00E7F3F6 /* Info.plist */,
+			);
+			path = chess3UITests;
+			sourceTree = "<group>";
+		};
+		607846651C3D649C004971CD /* ChessMoveMode */ = {
+			isa = PBXGroup;
+			children = (
+				607846661C3D64DD004971CD /* MoveMode.h */,
+				607846671C3D64DD004971CD /* MoveMode.m */,
+				609B54151C40CE3A0055AEA3 /* BerserkerMoveMode.h */,
+				609B54161C40CE3A0055AEA3 /* BerserkerMoveMode.m */,
+				609B54181C40CEDE0055AEA3 /* RiderMoveMode.h */,
+				609B54191C40CEDE0055AEA3 /* RiderMoveMode.m */,
+				609B541B1C40D0310055AEA3 /* CasterMoveMode.h */,
+				609B541C1C40D0310055AEA3 /* CasterMoveMode.m */,
+				609B541E1C40DB8C0055AEA3 /* AssassinMoveMode.h */,
+				609B541F1C40DB8C0055AEA3 /* AssassinMoveMode.m */,
+				60050F061C74AD9A005376FA /* ArcherMoveMode.h */,
+				60050F071C74AD9A005376FA /* ArcherMoveMode.m */,
+				6061695D1C78A63500CF46A7 /* LancerMoveMode.h */,
+				6061695E1C78A63500CF46A7 /* LancerMoveMode.m */,
+				607319C71C82DA15005D2595 /* SaberMoveMode.h */,
+				607319C81C82DA15005D2595 /* SaberMoveMode.m */,
+			);
+			name = ChessMoveMode;
+			sourceTree = "<group>";
+		};
+		607FFF3F1C283E22008C7DDF /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				607FFF401C283E4D008C7DDF /* chooseAttackAndHealth.h */,
+				607FFF411C283E4D008C7DDF /* chooseAttackAndHealth.m */,
+			);
+			name = PickerView;
+			sourceTree = "<group>";
+		};
+		60957BF91C2FF54A003B8E6E /* ChessCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				60A609B91C4BB9D9004BE5CB /* ChessCollectionView.h */,
+				60A609BA1C4BB9D9004BE5CB /* ChessCollectionView.m */,
+				60A609BC1C4BBA04004BE5CB /* ChessCollectionViewCell.h */,
+				60A609BD1C4BBA04004BE5CB /* ChessCollectionViewCell.m */,
+				60DD2B961C4E603B0044DF06 /* ChessCollectionViewLayout.h */,
+				60DD2B971C4E603B0044DF06 /* ChessCollectionViewLayout.m */,
+			);
+			name = ChessCollectionView;
+			sourceTree = "<group>";
+		};
+		609B54221C40DC520055AEA3 /* ChessView */ = {
+			isa = PBXGroup;
+			children = (
+				609B54231C40DC900055AEA3 /* GameboardView.h */,
+				609B54241C40DC900055AEA3 /* GameboardView.m */,
+				609B54261C40DCD70055AEA3 /* ChessView.h */,
+				609B54271C40DCD70055AEA3 /* ChessView.m */,
+				609B54291C40DEAE0055AEA3 /* StepView.h */,
+				609B542A1C40DEAE0055AEA3 /* StepView.m */,
+			);
+			name = ChessView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601565981C1BB31D00E7F3F6 /* chess3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601565C61C1BB31F00E7F3F6 /* Build configuration list for PBXNativeTarget "chess3" */;
+			buildPhases = (
+				601565951C1BB31D00E7F3F6 /* Sources */,
+				601565961C1BB31D00E7F3F6 /* Frameworks */,
+				601565971C1BB31D00E7F3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chess3;
+			productName = chess3;
+			productReference = 601565991C1BB31D00E7F3F6 /* chess3.app */;
+			productType = "com.apple.product-type.application";
+		};
+		601565B11C1BB31F00E7F3F6 /* chess3Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601565C91C1BB31F00E7F3F6 /* Build configuration list for PBXNativeTarget "chess3Tests" */;
+			buildPhases = (
+				601565AE1C1BB31F00E7F3F6 /* Sources */,
+				601565AF1C1BB31F00E7F3F6 /* Frameworks */,
+				601565B01C1BB31F00E7F3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601565B41C1BB31F00E7F3F6 /* PBXTargetDependency */,
+			);
+			name = chess3Tests;
+			productName = chess3Tests;
+			productReference = 601565B21C1BB31F00E7F3F6 /* chess3Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		601565BC1C1BB31F00E7F3F6 /* chess3UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601565CC1C1BB31F00E7F3F6 /* Build configuration list for PBXNativeTarget "chess3UITests" */;
+			buildPhases = (
+				601565B91C1BB31F00E7F3F6 /* Sources */,
+				601565BA1C1BB31F00E7F3F6 /* Frameworks */,
+				601565BB1C1BB31F00E7F3F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				601565BF1C1BB31F00E7F3F6 /* PBXTargetDependency */,
+			);
+			name = chess3UITests;
+			productName = chess3UITests;
+			productReference = 601565BD1C1BB31F00E7F3F6 /* chess3UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		601565911C1BB31D00E7F3F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = WangZhaoyun;
+				TargetAttributes = {
+					601565981C1BB31D00E7F3F6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 24Y8GAPRT7;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+					601565B11C1BB31F00E7F3F6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 601565981C1BB31D00E7F3F6;
+					};
+					601565BC1C1BB31F00E7F3F6 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 601565981C1BB31D00E7F3F6;
+					};
+				};
+			};
+			buildConfigurationList = 601565941C1BB31D00E7F3F6 /* Build configuration list for PBXProject "chess3" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 601565901C1BB31D00E7F3F6;
+			productRefGroup = 6015659A1C1BB31D00E7F3F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				601565981C1BB31D00E7F3F6 /* chess3 */,
+				601565B11C1BB31F00E7F3F6 /* chess3Tests */,
+				601565BC1C1BB31F00E7F3F6 /* chess3UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601565971C1BB31D00E7F3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601565AC1C1BB31E00E7F3F6 /* LaunchScreen.storyboard in Resources */,
+				6002867A1C8B249B00D16C08 /* Score.plist in Resources */,
+				601565A91C1BB31E00E7F3F6 /* Assets.xcassets in Resources */,
+				607496FF1C33FEEE00ECA01A /* AttackHealth.plist in Resources */,
+				601565A71C1BB31E00E7F3F6 /* Main.storyboard in Resources */,
+				6002DD3C1C2EAA2A0086776B /* chess.plist in Resources */,
+				600CE22D1C535BD40017CBCD /* BlackChess.plist in Resources */,
+				604D06071C8149F50071D39C /* Turn.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601565B01C1BB31F00E7F3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601565BB1C1BB31F00E7F3F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601565951C1BB31D00E7F3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				607319CB1C832E50005D2595 /* Libian.ttc in Sources */,
+				601565A41C1BB31D00E7F3F6 /* ViewController.m in Sources */,
+				6008D1D11C58F12400E08ED6 /* GameCenterHelper.m in Sources */,
+				6061695F1C78A63500CF46A7 /* LancerMoveMode.m in Sources */,
+				607846681C3D64DD004971CD /* MoveMode.m in Sources */,
+				60DD2B981C4E603B0044DF06 /* ChessCollectionViewLayout.m in Sources */,
+				60A609BB1C4BB9D9004BE5CB /* ChessCollectionView.m in Sources */,
+				60050F081C74AD9A005376FA /* ArcherMoveMode.m in Sources */,
+				607FFF421C283E4D008C7DDF /* chooseAttackAndHealth.m in Sources */,
+				60F1DADA1C47ED45009E4A97 /* ICSDropShadowView.m in Sources */,
+				607319C91C82DA15005D2595 /* SaberMoveMode.m in Sources */,
+				60F1DAD41C47C5C0009E4A97 /* MenuViewController.m in Sources */,
+				609B54281C40DCD70055AEA3 /* ChessView.m in Sources */,
+				609B541D1C40D0310055AEA3 /* CasterMoveMode.m in Sources */,
+				601450481C1D2467005228AB /* SecondViewController.m in Sources */,
+				609B542B1C40DEAE0055AEA3 /* StepView.m in Sources */,
+				601565A11C1BB31D00E7F3F6 /* AppDelegate.m in Sources */,
+				609B54201C40DB8C0055AEA3 /* AssassinMoveMode.m in Sources */,
+				609B541A1C40CEDE0055AEA3 /* RiderMoveMode.m in Sources */,
+				6015659E1C1BB31D00E7F3F6 /* main.m in Sources */,
+				60A609BE1C4BBA04004BE5CB /* ChessCollectionViewCell.m in Sources */,
+				607846621C3D6388004971CD /* ChessPlayViewController.m in Sources */,
+				600557BB1C45320A004FC9B1 /* JLAnimatedImagesView.m in Sources */,
+				60F1DAD11C47C1B3009E4A97 /* DrawerViewController.m in Sources */,
+				609B54171C40CE3A0055AEA3 /* BerserkerMoveMode.m in Sources */,
+				609B54251C40DC900055AEA3 /* GameboardView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601565AE1C1BB31F00E7F3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601565B71C1BB31F00E7F3F6 /* chess3Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601565B91C1BB31F00E7F3F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601565C21C1BB31F00E7F3F6 /* chess3UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		601565B41C1BB31F00E7F3F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601565981C1BB31D00E7F3F6 /* chess3 */;
+			targetProxy = 601565B31C1BB31F00E7F3F6 /* PBXContainerItemProxy */;
+		};
+		601565BF1C1BB31F00E7F3F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601565981C1BB31D00E7F3F6 /* chess3 */;
+			targetProxy = 601565BE1C1BB31F00E7F3F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		601565A51C1BB31E00E7F3F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601565A61C1BB31E00E7F3F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		601565AA1C1BB31E00E7F3F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				601565AB1C1BB31E00E7F3F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		601565C41C1BB31F00E7F3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhaoyun Wang (24Y8GAPRT7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Zhaoyun Wang (24Y8GAPRT7)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1d7409ff-8cc8-4df7-b24c-8e96fec74251";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		601565C51C1BB31F00E7F3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Zhaoyun Wang (24Y8GAPRT7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Zhaoyun Wang (24Y8GAPRT7)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "1d7409ff-8cc8-4df7-b24c-8e96fec74251";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		601565C71C1BB31F00E7F3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhaoyun Wang (R8A39KVDH5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Zhaoyun Wang (24Y8GAPRT7)";
+				INFOPLIST_FILE = chess3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Tcl/sqlite3",
+				);
+				New_Setting = "";
+				New_Setting1 = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Claud.Chess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d7409ff-8cc8-4df7-b24c-8e96fec74251";
+			};
+			name = Debug;
+		};
+		601565C81C1BB31F00E7F3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Zhaoyun Wang (R8A39KVDH5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Zhaoyun Wang (24Y8GAPRT7)";
+				INFOPLIST_FILE = chess3/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/Tcl/sqlite3",
+				);
+				New_Setting = "";
+				New_Setting1 = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Claud.Chess;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1d7409ff-8cc8-4df7-b24c-8e96fec74251";
+			};
+			name = Release;
+		};
+		601565CA1C1BB31F00E7F3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = chess3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suncold3.chess3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chess3.app/chess3";
+			};
+			name = Debug;
+		};
+		601565CB1C1BB31F00E7F3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = chess3Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suncold3.chess3Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/chess3.app/chess3";
+			};
+			name = Release;
+		};
+		601565CD1C1BB31F00E7F3F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = chess3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suncold3.chess3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chess3;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		601565CE1C1BB31F00E7F3F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = chess3UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Suncold3.chess3UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = chess3;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601565941C1BB31D00E7F3F6 /* Build configuration list for PBXProject "chess3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601565C41C1BB31F00E7F3F6 /* Debug */,
+				601565C51C1BB31F00E7F3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601565C61C1BB31F00E7F3F6 /* Build configuration list for PBXNativeTarget "chess3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601565C71C1BB31F00E7F3F6 /* Debug */,
+				601565C81C1BB31F00E7F3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601565C91C1BB31F00E7F3F6 /* Build configuration list for PBXNativeTarget "chess3Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601565CA1C1BB31F00E7F3F6 /* Debug */,
+				601565CB1C1BB31F00E7F3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601565CC1C1BB31F00E7F3F6 /* Build configuration list for PBXNativeTarget "chess3UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601565CD1C1BB31F00E7F3F6 /* Debug */,
+				601565CE1C1BB31F00E7F3F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 601565911C1BB31D00E7F3F6 /* Project object */;
+}
